@@ -1,0 +1,5 @@
+category: Video
+requires: cygwin glib2 libcurl4 libncurses8
+sdesc: "YouTube.com CLI video downloader"
+ldesc: "YouGrabber is a lightweight, command line YouTube.com video 
+downloader, made from scratch in ANSI C."

@@ -1,0 +1,61 @@
+yougrabber
+------------------------------------------
+YouGrabber is a lightweight, command line YouTube.com video downloader, 
+made from scratch in ANSI C.
+
+Runtime requirements:
+  cygwin-1.5.25-11
+  glib2-2.14.6-1
+  libcurl4-7.16.3-1
+  libncurses8-5.5-3
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20060817-1
+  cygport-0.3.10-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  pkg-config-0.21-1
+
+Canonical website:
+  http://yougrabber.sourceforge.net/
+
+Canonical download:
+  http://sourceforge.net/projects/yougrabber/files
+
+-------------------------------------------
+
+Build instructions:
+  unpack yougrabber-0.29.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./yougrabber-0.29.4-X.cygport all
+
+This will create:
+  /usr/src/yougrabber-0.29.4-X-src.tar.bz2
+  /usr/src/yougrabber-0.29.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/yg.exe
+  /usr/share/doc/yougrabber-0.29.4/CONTRIBUTORS
+  /usr/share/doc/yougrabber-0.29.4/ChangeLog
+  /usr/share/doc/yougrabber-0.29.4/INSTALL
+  /usr/share/doc/yougrabber-0.29.4/LICENSE
+  /usr/share/doc/yougrabber-0.29.4/README
+  /usr/share/doc/yougrabber-0.29.4/yg.conf.example
+  /usr/share/man/yg.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.29.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

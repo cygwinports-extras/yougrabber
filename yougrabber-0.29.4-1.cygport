@@ -1,0 +1,19 @@
+DESCRIPTION="YouTube video downloader"
+HOMEPAGE="http://yougrabber.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+
+src_compile() {
+	lndirs
+	cd ${B}/src
+	cygmake
+}
+
+src_install() {
+	cd ${B}/src
+	USE_DESTDIR=0
+	cyginstall \
+		PREFIX=${D}/usr \
+		MANDIR=${D}/usr/share/man
+
+	mv ${D}/usr/share/doc/${PN}{,-${PV}}
+}
